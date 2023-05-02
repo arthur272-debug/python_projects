@@ -1,2 +1,3 @@
-# python_projects
-Contém desafios e exercícios feitos sobre a linguagem de programação Python(Básico ao Avançado)
+# Projetos de Python
+### Contém desafios e exercícios feitos sobre a linguagem de programação Python, desde do nível básico ao avançado.
+
