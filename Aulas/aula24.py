@@ -1,2 +1,2 @@
-# Fatiamento de strings - contiuar em 25/01
+# Fatiamento de strings - continuar em 25/01
 
