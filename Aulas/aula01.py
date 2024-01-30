@@ -1,7 +1,7 @@
 #Comentário em Python
 print('Hello World!!')
 
-print('LoucuraRio aqui!!')
+print('TutuRio aqui!!')
 """
 DocString - serve para documentação
 
