@@ -11,5 +11,7 @@ if (caracteres <= 4):
     print('Seu nome é curto.')
 elif (caracteres >= 5) and (caracteres <= 6):
     print('Seu nome é normal.')
-else:
+elif (caracteres > 6):
     print('Seu nome é muito grande.')
+else:
+    print('Nome inválido. Por favor, digite mais de uma letra.')
