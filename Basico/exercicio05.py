@@ -8,9 +8,9 @@ numero_str = input('Digite um número inteiro: ')
 
 try:
     numero_inteiro = int(numero_str)
-    numero_par = numero_inteiro % 2
+    numero_par = numero_inteiro % 2 == 0
     
-    if (numero_par ==0):
+    if (numero_par):
         print('O número digitado é par.')
     else:
         print('O número digitado é ímpar.')
