@@ -9,7 +9,7 @@ hora_str = input('Digite a hora desejada: ')
 try:
    hora_int = int(hora_str)
 
-   if (hora_int >= 0) and (hora_int <= 11) or (hora_int == 24):
+   if (hora_int >= 0) and (hora_int <= 11):
        print('Bom dia/ Buenos días/ Good morning!!')
    elif (hora_int >= 12) and (hora_int <= 17):
       print('Boa tarde/ Buenas tardes/ Good afternoon!!')  
