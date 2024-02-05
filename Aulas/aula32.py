@@ -1,4 +1,4 @@
-# Aula sobre operadores de atribuição - terminar ainda
+# Aula sobre operadores de atribuição
 
 contador = 0
 
