@@ -1,6 +1,6 @@
 # Exercício guiado - Calculadora com While
 
-total =''
+total = ''
 while True:
 
     num1 = input('Digite um número: ')
@@ -9,21 +9,21 @@ while True:
         num1 = float(num1)
         num2 = float(num2)
         operacao = input(
-            'Digite a operação desejada(Adição/Subtração/Multiplicação/Divisão): ')
+            'Digite a operação desejada(Adição/Subtração/Multiplicação/Divisão) - (+ - x / ): ')
         operacao = operacao.lower()
-        if (operacao == 'adição'):
+        if (operacao == 'adição') or (operacao == '+'):
             total = num1+num2
-        elif (operacao == 'subtração'):
+        elif (operacao == 'subtração') or (operacao == '-'):
             total = num1-num2
-        elif (operacao == 'multiplicação'):
+        elif (operacao == 'multiplicação') or (operacao == 'x'):
             total = num1*num2
-        elif (operacao == 'divisão'):
+        elif (operacao == 'divisão') or (operacao == '/'):
             total = num1/num2
         else:
             print('Operação Inválida!!')
     except:
         print('Número(s) Inválido!!')
-        continue     
+        continue
 
     print('Resultado da operação:', total)
 
