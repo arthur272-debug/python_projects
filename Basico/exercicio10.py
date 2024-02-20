@@ -3,9 +3,14 @@ frase = 'O Python é uma linguagem de programação'
 iterador = 0
 letra_mais_vezes = ''
 quantidade_letra_mais_vezes =0
+frase_lower = frase.lower()
 
-while iterador<len(frase):
-    letra_atual = frase[iterador]
+while iterador<len(frase_lower):
+    letra_atual = frase_lower[iterador]
+
+    iterador+=1
+    if letra_atual == ' ':
+        continue
 
     quantidade_letra = frase.count(letra_atual)
 
@@ -13,6 +18,4 @@ while iterador<len(frase):
         quantidade_letra_mais_vezes = quantidade_letra
         letra_mais_vezes = letra_atual
 
-    iterador+=1
-
-    print(f'A letra que aparaceu {quantidade_letra_mais_vezes} e a letra {letra_mais_vezes}')
+print(f'A letra que aparaceu {quantidade_letra_mais_vezes} é a letra {letra_mais_vezes}')
