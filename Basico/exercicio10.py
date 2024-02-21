@@ -1,4 +1,4 @@
-frase = 'O Python é uma linguagem de programação'
+frase = 'aaaaaaabbb'
 
 iterador = 0
 letra_mais_vezes = ''
@@ -18,4 +18,4 @@ while iterador<len(frase_lower):
         quantidade_letra_mais_vezes = quantidade_letra
         letra_mais_vezes = letra_atual
 
-print(f'A letra que aparaceu {quantidade_letra_mais_vezes} é a letra {letra_mais_vezes}')
+print(f'A letra que aparaceu {quantidade_letra_mais_vezes}x é a letra {letra_mais_vezes}')
