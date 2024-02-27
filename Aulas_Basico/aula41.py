@@ -1,4 +1,4 @@
-# revisão sobre sobre os métodos principais do Tipo List
+# revisão sobre sobre os métodos principais do Tipo List - Parte 1
 
 lista =[10,20,30,40]
 numero = lista[2]
