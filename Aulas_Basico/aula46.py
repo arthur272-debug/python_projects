@@ -1,4 +1,4 @@
-# Aula sobre desempacotamento e empacotamento -- terminar isso
+# Aula sobre desempacotamento e empacotamento
 
 nome1,nome2,nome3 = ['Maria','João','Luiz']
 print(nome2)
