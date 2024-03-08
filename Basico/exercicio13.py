@@ -4,28 +4,53 @@
 --> inserir, apagar e listar valores da sua lista
 --> Não permita que o programa quebre com 
 --> erros de índices inexistentes na lista.
-terminar ainda
 """
 import os
 termina_lista = False
 opcao = ''
 lista = []
 
-print(f'Lista de compras:\t')
+
 
 while (termina_lista == False):
-    opcao = input(f'Selecione uma opção \t [i]nserir [a]pagar [l]istar:')
+    print(f'Lista de compras:\t')
+    opcao = input(
+        f'Selecione uma opção --> [i]nserir [a]pagar [l]istar [e]ncerrar: ')
     opcao = opcao.lower()
-    if (opcao =='i'):
+    tamanho = len(lista)
+    if (opcao == 'i'):
         item = input('Digite o item:')
         lista.append(item)
+        os.system('cls')
     elif (opcao == 'l'):
-        itens = lista.count()
-        if(itens== 0):
-            print('Lista vazia: nada para listar.')    
+        if (tamanho == 0):
+            print('Lista vazia: nada para listar.')
         else:
             for indice, nome in enumerate(lista):
-                print(indice,nome)
+                print(indice, nome)
+
     elif (opcao == 'a'):
-        item = input('Qual indice você quer deletar?')
-        #if lista.index(item)
+        indice = input('Qual indice você quer deletar? ')
+        try:
+            indice = int(indice)
+        except:
+            print('Item inválido!! Por favor, digite outro. ')
+            continue
+
+        if (indice > tamanho) or (tamanho == 0):
+            print('Índice não existe.')
+        else:
+            item = lista[indice]
+            lista.remove(item)
+            print(f'Item {item} foi removido da lista de compras.')
+    elif (opcao == 'e'):
+        os.system('cls')
+        if (tamanho == 0):
+            print('Lista vazia: nada para listar.')
+        else:
+            for indice, nome in enumerate(lista):
+                print(indice, nome)
+
+        termina_lista = True
+    else:
+        print('Opção Inválida!!')
