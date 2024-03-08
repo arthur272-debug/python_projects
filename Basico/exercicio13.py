@@ -19,10 +19,11 @@ while (termina_lista == False):
     opcao = opcao.lower()
     tamanho = len(lista)
     if (opcao == 'i'):
+        os.system('cls')
         item = input('Digite o item:')
         lista.append(item)
-        os.system('cls')
     elif (opcao == 'l'):
+        os.system('cls')
         if (tamanho == 0):
             print('Lista vazia: nada para listar.')
         else:
