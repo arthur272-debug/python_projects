@@ -39,12 +39,24 @@ Se o resultado anterior for maior que 9:
 contrário disso:
     resultado é o valor da conta
 """
+import sys
 
 print('Validador de CPF \n')
 
 # validação da entrada fornecida
 
 cpf = input('Digite um CPF: ')
+
+if ('.' in cpf) and ('-' in cpf):
+    cpf = cpf.replace('.', '')
+    cpf = cpf.replace('-', '')
+
+entrada_sequencial = cpf == (cpf[0] * len(cpf))
+
+if entrada_sequencial:
+    print('CPF Inválido')
+    sys.exit()
+
 
 if (cpf.isnumeric()) and (len(cpf) == 11):
     multiplicador = 10
@@ -80,9 +92,9 @@ if (cpf.isnumeric()) and (len(cpf) == 11):
     digito2_valido = digito2_valido if digito2_valido <= 9 else 0
 
     if (digito1_valido == int(cpf[9])) and (digito2_valido == int(cpf[10])):
-        print(f'O CPF {cpf} é válido!')
+        print(f'O CPF digitado é válido!')
     else:
-        print(f'O CPF {cpf} não é válido!')
+        print(f'O CPF digitado não é válido!')
 
 else:
     print('O CPF digitado não é válido.')
