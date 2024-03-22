@@ -61,27 +61,28 @@ if (cpf.isnumeric()) and (len(cpf) == 11):
             break
 
     digito1_valido = (soma * 10) % 11
-    digito1_valido = digito1_valido if digito1_valido<=9 else 0
+    digito1_valido = digito1_valido if digito1_valido <= 9 else 0
 
-# cálculo do segundo dígito -- verificar erro aqui
+# cálculo do segundo dígito
     soma = 0
     multiplicador = 11
     for digito_02 in cpf:
-        if multiplicador == 2:
-            break
+
         digito_02 = int(digito_02)
         conta = digito_02 * multiplicador
         soma = soma + conta
+        if multiplicador == 2:
+            break
+
         multiplicador -= 1
 
-
     digito2_valido = (soma * 10) % 11
-    digito2_valido = digito2_valido if digito2_valido<=9 else 0
-    
+    digito2_valido = digito2_valido if digito2_valido <= 9 else 0
+
     if (digito1_valido == int(cpf[9])) and (digito2_valido == int(cpf[10])):
         print(f'O CPF {cpf} é válido!')
-    else: 
+    else:
         print(f'O CPF {cpf} não é válido!')
-        
+
 else:
     print('O CPF digitado não é válido.')
