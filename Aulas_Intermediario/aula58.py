@@ -8,7 +8,7 @@ def escopo():
     x = 10
 
     def outra_funcao():
-        global x
+        global x  # isso aqui é uma má prática
         x = 11
         y = 2
         print(x, y)
@@ -19,4 +19,4 @@ def escopo():
 
 print(x)
 escopo()
-print(x,0)
+print(x, 0)
