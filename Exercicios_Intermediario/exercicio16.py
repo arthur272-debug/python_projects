@@ -1,5 +1,4 @@
 # Exercício - sistema de perguntas e respostas
-
 perguntas = [
     {
         'Pergunta': 'Quanto é 2+2?',
@@ -17,6 +16,7 @@ perguntas = [
         'Resposta': '5',
     },
 ]
+perguntas_acertadas = 0
 
 for pergunta in perguntas:
     print('Pergunta:', pergunta['Pergunta'])
@@ -24,12 +24,14 @@ for pergunta in perguntas:
     for indice, opcao in enumerate(pergunta['Opções']):
         print(f'{indice}) {opcao}')
     resposta = input('Escolha uma opção:')
-    try:
-        int(resposta)
-    except:
-        print('Reposta Inválida!!')
-        continue
-    if pergunta['Opções'][resposta] == pergunta['Resposta']:
-        print('Acertou!')
+    if resposta.isdigit():
+        resposta = int(resposta)
+        if pergunta['Opções'][resposta] == pergunta['Resposta']:
+            print('Acertou!\n')
+            perguntas_acertadas += 1
+        else:
+            print('Errou!\n')
     else:
-        print('Errou!')
+        print('Opção Inválida!\n')
+
+print(f'Você acertou {perguntas_acertadas} de', len(perguntas), 'perguntas.')
