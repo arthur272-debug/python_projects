@@ -11,6 +11,11 @@ Requisitos:
     Se não encontrar duplicados na lista, retorne -1
 """
 
+
+def achar_duplicado(lista):
+    ...  # pensar no que fazer
+
+
 lista_de_listas_de_inteiros = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     [9, 1, 8, 9, 9, 7, 2, 1, 6, 8],
@@ -25,4 +30,13 @@ lista_de_listas_de_inteiros = [
     [5, 3, 1, 8, 5, 7, 1, 8, 8, 7],
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
-# Pensar amanhã(04/06)
+
+# mostra ao usuário as listas existentes
+print('Listas presentes:')
+for indice, lista in enumerate(lista_de_listas_de_inteiros, start=1):
+    print(f'{indice}: {lista}')
+
+# operação para achar o número duplicado em cada lista
+for lista in lista_de_listas_de_inteiros:
+    numero_duplicado = achar_duplicado(set(lista))
+    print(f'Primeiro número duplicado da Lista {lista}: {numero_duplicado}')
