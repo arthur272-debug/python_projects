@@ -13,7 +13,16 @@ Requisitos:
 
 
 def achar_duplicado(lista):
-    ...  # pensar no que fazer
+    conjunto = set()
+    numero_duplicado = -1
+    for numero in lista:
+        if numero in conjunto:
+            numero_duplicado = numero
+            break
+        else:
+            conjunto.add(numero)
+
+    return numero_duplicado
 
 
 lista_de_listas_de_inteiros = [
@@ -35,8 +44,10 @@ lista_de_listas_de_inteiros = [
 print('Listas presentes:')
 for indice, lista in enumerate(lista_de_listas_de_inteiros, start=1):
     print(f'{indice}: {lista}')
-
+print('\nNúmeros duplicados das listas:\n')
+contador = 1
 # operação para achar o número duplicado em cada lista
 for lista in lista_de_listas_de_inteiros:
-    numero_duplicado = achar_duplicado(set(lista))
-    print(f'Primeiro número duplicado da Lista {lista}: {numero_duplicado}')
+    numero_duplicado = achar_duplicado(lista)
+    print(f' Lista {contador}: {numero_duplicado}')
+    contador += 1
