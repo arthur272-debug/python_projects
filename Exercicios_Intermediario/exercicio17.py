@@ -40,14 +40,12 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-# mostra ao usuário as listas existentes
-print('Listas presentes:')
-for indice, lista in enumerate(lista_de_listas_de_inteiros, start=1):
-    print(f'{indice}: {lista}')
-print('\nNúmeros duplicados das listas:\n')
+print('Listas presentes:\n')
 contador = 1
+
 # operação para achar o número duplicado em cada lista
 for lista in lista_de_listas_de_inteiros:
+    print(f'Lista {contador}: {lista}')
     numero_duplicado = achar_duplicado(lista)
-    print(f' Lista {contador}: {numero_duplicado}')
+    print(f'Primeiro número duplicado: {numero_duplicado}\n')
     contador += 1
