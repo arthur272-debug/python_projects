@@ -1,4 +1,4 @@
-# Revisão a função lambda - ver na parte do material
+# Revisão a função lambda
 
 def exibir(lista):
     for item in lista:
