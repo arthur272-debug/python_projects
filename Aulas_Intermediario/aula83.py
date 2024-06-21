@@ -1,4 +1,4 @@
-# Aula sobre Iterables e Iterators em Python - parte 1
+# Aula sobre Iterables e Iterators em Python
 
 iterable = ['Yo', 'Tenho', '__iter__']
 iterator = iter(iterable)
