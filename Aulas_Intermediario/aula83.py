@@ -1,4 +1,4 @@
-# Aula sobre Generator expression, Iterables e Iterators em Python - parte 1
+# Aula sobre Iterables e Iterators em Python - parte 1
 
 iterable = ['Yo', 'Tenho', '__iter__']
 iterator = iter(iterable)
