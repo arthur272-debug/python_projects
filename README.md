@@ -1,3 +1,2 @@
 # Projetos de Python
-### Contém desafios e exercícios feitos sobre a linguagem de programação Python, desde do nível básico ao avançado.
-
+### Projeto que abrange desafios e exercícios na linguagem de programação Python, desde o nível básico ao avançado. O objetivo é aprender e aprofundar os conhecimentos em Python de forma prática e progressiva.
