@@ -15,7 +15,7 @@ def dividirNumeros(numero, numero2):
 
 # print(dividirNumeros(8, 2))
 
-try:
-    resultado = dividirNumeros(9, 0)
-except ValueError as e:
-    print(f'Erro: {e}')
+# try:
+resultado = dividirNumeros(9, 0)
+# except ValueError as e:
+#   print(f'Erro: {e}')
