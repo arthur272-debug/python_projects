@@ -1,7 +1,11 @@
 # Variáveis livres + nonlocal(global - local)
 
+print(globals())
+
+
 def concatenar(string_inicio):
     valor_final = string_inicio
+    print(locals())
 
     def interno(valor_concatenar):
         nonlocal valor_final
