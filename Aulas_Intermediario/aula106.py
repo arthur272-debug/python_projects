@@ -1,0 +1,1 @@
+# aprendendo sobre filter que é um filtro funcional
