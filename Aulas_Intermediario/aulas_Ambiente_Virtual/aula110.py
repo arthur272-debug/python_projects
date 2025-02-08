@@ -7,3 +7,5 @@
 
 # Também foi aprendido sobre o pip e como instalar pacotes com ele
 # Foi feita a instalação de alguns pacotes como pymysql, por exemplo
+
+# Além disso, também foi ensinado sobre o arquivo requirements.txt - como se gera e como se instala pacotes a partir dele
