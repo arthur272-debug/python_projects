@@ -1,1 +1,0 @@
-# aprendendo sobre criação de arquivos + context manager with
