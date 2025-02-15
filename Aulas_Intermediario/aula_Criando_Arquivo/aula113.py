@@ -17,8 +17,13 @@ with open(caminho_arquivo,'w+') as arquivo:
     print(arquivo.readline())
     print(arquivo.readline())
     print(arquivo.readline())
+    
+    print('READLINES')
+    arquivo.seek(0,0)
+    for linha in arquivo.readlines():
+        print(linha.strip())
 
-print('Arquivo fechado com sucesso!')
+print('Arquivo fechado com sucesso!\n')
 print('*'*20)
 
 with open(caminho_arquivo,'r') as arquivo:
