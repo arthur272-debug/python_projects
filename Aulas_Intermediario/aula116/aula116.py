@@ -14,8 +14,15 @@ pessoa ={
         {'rua':'Otávio Miranda','numero':100},
     ],
 
-
 }
 
+# Aprendendo a escrever em JSON
 # with open(caminho_arquivo,'w', encoding='utf8') as arquivo:
 #     json.dump(pessoa,arquivo, indent=4, ensure_ascii=False)
+
+# Aprendendo a ler em JSON
+with open(caminho_arquivo,'r', encoding='utf8') as arquivo:
+    dados = json.load(arquivo)
+    print(dados)
+
+print(dados['endereco'][0]['rua'])
