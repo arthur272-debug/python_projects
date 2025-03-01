@@ -1,0 +1,18 @@
+{
+    "nome": "Arthur",
+    "idade": 36,
+    "cursos": [
+        "Inglês",
+        "Python"
+    ],
+    "endereco": [
+        {
+            "rua": "Rua dos bobos",
+            "numero": 0
+        },
+        {
+            "rua": "Otávio Miranda",
+            "numero": 100
+        }
+    ]
+}
