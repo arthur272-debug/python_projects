@@ -12,6 +12,8 @@ def listar_tarefas(tarefas):
         print("Tarefas:")
         for tarefa in tarefas:
             print(f"- {tarefa}")
+    
+    return
 
 comando = None
 tarefas = []
