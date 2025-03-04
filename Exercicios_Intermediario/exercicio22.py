@@ -4,6 +4,16 @@
 # desfazer a última tarefa (desfazer), refazer a última tarefa (refazer). 
 # O comando sair do programa é algo extra.
 
+# revisar código
+
+def adicionar_tarefa(tarefas, tarefa):
+    if not tarefa.strip():
+        print("Tarefa inválida.")
+        return
+        
+    tarefas.append(tarefa)
+    print("Tarefa adicionada na lista!")
+
 
 def listar_tarefas(tarefas):
     if len(tarefas) == 0:
@@ -12,6 +22,22 @@ def listar_tarefas(tarefas):
         print("Tarefas:")
         for tarefa in tarefas:
             print(f"- {tarefa}")
+    
+    return
+
+def refazer_tarefa(tarefas, tarefas_desfeitas):
+    if len(tarefas_desfeitas) == 0:
+        print("Não há tarefas para refazer.")
+    else:
+        tarefas.append(tarefas_desfeitas.pop())
+    
+    return
+
+def desfazer_tarefa(tarefas, tarefas_desfeitas):
+    if len(tarefas) == 0:
+        print("Não há tarefas para desfazer.")
+    else:
+        tarefas_desfeitas.append(tarefas.pop())
     
     return
 
@@ -38,14 +64,11 @@ while True:
             listar_tarefas(tarefas)
             
     elif comando == "3":
-            tarefas_desfeitas.append(tarefas.pop())
+            desfazer_tarefa(tarefas, tarefas_desfeitas)
             listar_tarefas(tarefas)
             
     elif comando == "4":
-        if len(tarefas_desfeitas) == 0:
-            print("Não há tarefas para refazer.")
-        else:
-            tarefas.append(tarefas_desfeitas.pop())
+            refazer_tarefa(tarefas, tarefas_desfeitas)
             listar_tarefas(tarefas)
             
     elif comando == "5":
