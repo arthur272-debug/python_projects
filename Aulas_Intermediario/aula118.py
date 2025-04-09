@@ -1,5 +1,4 @@
-# Aprendendo a parte de guard clauses -> aplicando na situação dos if's
-# revisar a lógica do código
+# Praticando a parte de guard clauses -> aplicando na situação dos if's
 
 def adicionar_tarefa(tarefas, tarefa):
     if not tarefa.strip():
@@ -48,7 +47,7 @@ while True:
     print("- refazer; e")
     print("- sair.\n")
     
-    comando = input("Digite o número da opção desejada: ")
+    tarefa = input("Digite o número da opção desejada: ")
     
     comandos_validos ={
         'listar': lambda: listar_tarefas(tarefas),
@@ -57,28 +56,7 @@ while True:
         'refazer': lambda: refazer_tarefa(tarefas, tarefas_desfeitas),
         'sair': lambda: exit()
     }
+    comando =comandos_validos.get(tarefa) if comandos_validos.get(tarefa) else \
+        lambda: print("Comando inválido.")
     
-    
-    # if comando == "1":
-    #     tarefa = input("Digite a tarefa a ser adicionada: ")
-    #     tarefas.append(tarefa)
-    #     listar_tarefas(tarefas)
-        
-    # elif comando == "2":
-    #         listar_tarefas(tarefas)
-            
-    # elif comando == "3":
-    #         desfazer_tarefa(tarefas, tarefas_desfeitas)
-    #         listar_tarefas(tarefas)
-            
-    # elif comando == "4":
-    #         refazer_tarefa(tarefas, tarefas_desfeitas)
-    #         listar_tarefas(tarefas)
-            
-    # elif comando == "5":
-    #     break
-    
-    # else:
-    #     print("Comando inválido.")
-        
-    # print("\n")
+    comando()
