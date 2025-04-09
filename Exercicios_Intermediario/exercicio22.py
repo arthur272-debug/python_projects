@@ -4,7 +4,6 @@
 # desfazer a última tarefa (desfazer), refazer a última tarefa (refazer). 
 # O comando sair do programa é algo extra.
 
-# revisar código
 
 def adicionar_tarefa(tarefas, tarefa):
     if not tarefa.strip():
