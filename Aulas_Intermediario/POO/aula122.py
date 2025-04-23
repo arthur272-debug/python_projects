@@ -18,6 +18,7 @@ class Carro:
 
 fusca = Carro("Fusca", "azul", 2000)
 fusca.informar_carro()
+Carro.informar_carro(fusca)  # Chamando o método da classe Carro - outra forma de chamar o método por meio do self
 fusca.acelerar_carro()
 
 print("\n---\n")
