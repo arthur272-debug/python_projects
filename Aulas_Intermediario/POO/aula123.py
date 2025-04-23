@@ -1,1 +1,1 @@
-# aprofundando conhecimento em self
+# Revisando a parte de escopo - classe e métodos da classe
