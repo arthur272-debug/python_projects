@@ -1,6 +1,4 @@
 # Revisando a parte de escopo - classe e métodos da classe
-
-
 class Animal:
     def __init__(self, nome, especie):
         self.nome = nome
