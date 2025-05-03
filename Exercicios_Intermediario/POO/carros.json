@@ -1,0 +1,20 @@
+[
+    {
+        "modelo": "Fusca",
+        "ano": 1980,
+        "cor": "azul",
+        "marca": "Volkswagen"
+    },
+    {
+        "modelo": "Civic",
+        "ano": 2020,
+        "cor": "preto",
+        "marca": "Honda"
+    },
+    {
+        "modelo": "Civic",
+        "ano": 2020,
+        "cor": "preto",
+        "marca": "Honda"
+    }
+]
