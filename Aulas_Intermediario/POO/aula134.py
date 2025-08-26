@@ -1,4 +1,4 @@
-# Aprendendo sobre as relações entre classes -> Agregação
+# Revisando sobre as relações entre classes -> Agregação
 
 
 class Carrinho:

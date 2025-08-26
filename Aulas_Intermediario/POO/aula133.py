@@ -1,4 +1,4 @@
-# Aprendendo sobre as relações entre classes -> Associação
+# Revisando sobre as relações entre classes -> Associação
 
 
 class Escritor:
