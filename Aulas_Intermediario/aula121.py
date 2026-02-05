@@ -1,1 +1,1 @@
-# Praticando a sintaxe 'super' e entendendo o seu funcionamento interno
+# Praticando a sintaxe 'super' e a sobreposição de métodos
